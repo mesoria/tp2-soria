@@ -1,0 +1,6 @@
+C:\Users\Lenovo\source\repos\TPC_Soria\Dominio\bin\Release\Dominio.dll
+C:\Users\Lenovo\source\repos\TPC_Soria\Dominio\bin\Release\Dominio.pdb
+C:\Users\Lenovo\source\repos\TPC_Soria\Dominio\obj\Release\Dominio.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\TPC_Soria\Dominio\obj\Release\Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\TPC_Soria\Dominio\obj\Release\Dominio.dll
+C:\Users\Lenovo\source\repos\TPC_Soria\Dominio\obj\Release\Dominio.pdb
