@@ -1,0 +1,11 @@
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\bin\Release\Negocio.dll
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\bin\Release\Negocio.pdb
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\bin\Release\AccesoDatos.dll
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\bin\Release\Dominio.dll
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\bin\Release\AccesoDatos.pdb
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\bin\Release\Dominio.pdb
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\obj\Release\Negocio.csprojAssemblyReference.cache
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\obj\Release\Negocio.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\obj\Release\Negocio.csproj.CopyComplete
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\obj\Release\Negocio.dll
+C:\Users\Lenovo\source\repos\TPC_Soria\Negocio\obj\Release\Negocio.pdb
