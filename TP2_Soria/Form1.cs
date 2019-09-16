@@ -66,6 +66,7 @@ namespace TP2_Soria
                 dgvArticulos.DataSource = listaArticuloLocal;
                 dgvArticulos.Columns[0].Visible = false;
                 dgvArticulos.Columns[4].Visible = false;
+                dgvArticulos.Columns[5].Visible = false;
                 // MessageBox.Show(lista[0].Tipo.ToString());
             }
             catch (Exception ex)
@@ -191,6 +192,31 @@ namespace TP2_Soria
                 frmNewArticulo alta = new frmNewArticulo();
                 alta.ShowDialog();
                 CargarDatos();
+        }
+
+        private void BtnModificar_Click(object sender, EventArgs e)
+        {
+            Articulo modificar;
+            modificar = (Articulo)dgvArticulos.CurrentRow.DataBoundItem;
+            frmNewArticulo frmModificar = new frmNewArticulo(modificar);
+            // frmModificar.Text = "Modificar";
+            frmModificar.ShowDialog();
+            CargarDatos();
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            ArticuloNegocio negocio = new ArticuloNegocio();
+            try
+            {
+                int id = ((Articulo)dgvArticulos.CurrentRow.DataBoundItem).Id;
+                negocio.Eliminar(id);
+                CargarDatos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }

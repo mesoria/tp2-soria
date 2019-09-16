@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnArticulo = new System.Windows.Forms.ToolStripButton();
-            this.btnCategorias = new System.Windows.Forms.ToolStripButton();
+            this.btnModificar = new System.Windows.Forms.ToolStripButton();
             this.dgvArticulos = new System.Windows.Forms.DataGridView();
             this.btnFind = new System.Windows.Forms.Button();
             this.lblTitleFilter = new System.Windows.Forms.Label();
@@ -46,6 +46,7 @@
             this.lblObj = new System.Windows.Forms.Label();
             this.cboObj2 = new System.Windows.Forms.ComboBox();
             this.btnMostrarTodo = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArticulos)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +56,7 @@
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnArticulo,
-            this.btnCategorias});
+            this.btnModificar});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1000, 27);
@@ -72,14 +73,15 @@
             this.btnArticulo.Text = "Agregar Articulo";
             this.btnArticulo.Click += new System.EventHandler(this.BtnArticulo_Click);
             // 
-            // btnCategorias
+            // btnModificar
             // 
-            this.btnCategorias.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btnCategorias.Image = ((System.Drawing.Image)(resources.GetObject("btnCategorias.Image")));
-            this.btnCategorias.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnCategorias.Name = "btnCategorias";
-            this.btnCategorias.Size = new System.Drawing.Size(29, 24);
-            this.btnCategorias.Text = "Categorias";
+            this.btnModificar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(29, 24);
+            this.btnModificar.Text = "Modificar Artículo";
+            this.btnModificar.Click += new System.EventHandler(this.BtnModificar_Click);
             // 
             // dgvArticulos
             // 
@@ -219,11 +221,22 @@
             this.btnMostrarTodo.UseVisualStyleBackColor = true;
             this.btnMostrarTodo.Click += new System.EventHandler(this.BtnMostrarTodo_Click);
             // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Location = new System.Drawing.Point(830, 403);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(121, 35);
+            this.btnEliminar.TabIndex = 17;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 450);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnMostrarTodo);
             this.Controls.Add(this.cboObj2);
             this.Controls.Add(this.lblObj);
@@ -253,7 +266,7 @@
         #endregion
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnArticulo;
-        private System.Windows.Forms.ToolStripButton btnCategorias;
+        private System.Windows.Forms.ToolStripButton btnModificar;
         private System.Windows.Forms.DataGridView dgvArticulos;
         private System.Windows.Forms.Button btnFind;
         private System.Windows.Forms.Label lblTitleFilter;
@@ -268,6 +281,7 @@
         private System.Windows.Forms.Label lblObj;
         private System.Windows.Forms.ComboBox cboObj2;
         private System.Windows.Forms.Button btnMostrarTodo;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }
 
