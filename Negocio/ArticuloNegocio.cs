@@ -34,8 +34,8 @@ namespace Negocio
                     aux.Marca       = marcaNegocio.GetMarca((Int32)accesoDatos.Lector[4]);
                     aux.Categoria   = new CategoriaArticulo();
                     aux.Categoria   = categoriaNegocio.GetCategoria((Int32)accesoDatos.Lector[5]);
-                    aux.Imagen      = (string)accesoDatos.Lector[6];
-                    aux.Precio      = (float)accesoDatos.Lector[7];
+                    //aux.Imagen      = (string)accesoDatos.Lector[6];
+                    //aux.Precio      = (float)accesoDatos.Lector[7];
            
                     lista.Add(aux);
                 }
